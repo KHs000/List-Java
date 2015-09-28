@@ -16,10 +16,18 @@ public class Nodo <E> {
         next = previous = null;
     }
     
+    public Nodo () {
+        next = previous = null;
+    }
+    
     public Nodo (E dado, Nodo next, Nodo previous) {
         this.dado = dado;
         this.next = next;
         this.previous = previous;
     }
     
+    public Nodo (Nodo next, Nodo previous) {
+        this.next = next;
+        this.previous = previous;
+    }
 }
